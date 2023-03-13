@@ -20,7 +20,7 @@ class GameServiceApplicationTests {
 	
 	
 	@Test
-		void addgame() throws Exception {
+		void addgame() {
 			new Game(3,"car racing","video games", (float) 250.90);
 			assertNotNull(gameDao.findById(3).get());
 
